@@ -1,0 +1,182 @@
+  .header-back{
+    background-color:#FFFCFC;
+
+  }
+
+  .body{
+    background-color: #E5E5E5;
+
+  }
+
+
+.lin{
+  margin-left: 500px;
+}
+
+
+.lin ul li {
+  margin: 0px 40px 0px 0px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.lin a{
+    color: #000000;
+}
+
+
+.space{
+  height: 209px;
+}
+
+
+.section1 h2{
+  font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 73px;
+}
+
+.section1 p{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+
+}
+
+.button{
+  border-radius: 10px;
+}
+
+
+.space2{
+  height: 300px;
+}
+
+.space3{
+  height: 50px;
+}
+
+.app{
+  margin-bottom: 70px;
+}
+
+
+.card1{
+
+  position: absolute;
+  width: 367px;
+  height: 435px;
+  left: 0px;
+  top: 0px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.card2{
+
+position: absolute;
+width: 367px;
+height: 435px;
+left: 0px;
+top: 0px;
+
+background: #FF7F5C;
+border-radius: 10px;
+}
+
+.card3{
+
+position: absolute;
+width: 367px;
+height: 435px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+border-radius: 10px;
+}
+
+
+.back-elipse{
+background-color: #FFF9F7;
+width: 120px;
+height: 120px;
+margin-left: 110px;
+margin-top: 50px;
+top: 51px;
+
+}
+
+.section2 h2{
+  font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 29px;
+color: #FF7F5C;
+}
+
+.section2 p{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+
+color: #666666;
+}
+
+.form-box{
+  height: 404px;
+  background-color: white;
+}
+
+.form-box h2{
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 47px;
+color: #333333;
+
+}
+
+.form-line{
+  position: absolute;
+width: 447px;
+height: 0px;
+left: 0px;
+border: 2px solid #333333;
+margin-left: 100px;
+margin-top: 50px;
+}
+
+.form-but{
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 560px){
+  .lin{
+    margin-left: 00px;
+  }
+}
