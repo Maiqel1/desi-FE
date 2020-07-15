@@ -137,6 +137,17 @@ text-align: center;
 color: #666666;
 }
 
+.section3 p{
+  font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+text-align: right;
+color: #333333;
+
+}
+
 .form-box{
   height: 404px;
   background-color: white;
@@ -165,6 +176,7 @@ margin-top: 50px;
 .form-but{
   margin-left: 20px;
 }
+
 
 
 
