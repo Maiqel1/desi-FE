@@ -1,7 +1,7 @@
 <?php
     include_once 'dbh.inc.php';
 
-    mysqli_select_db($conn, "db4free.net") or die("no db found");
+    mysqli_select_db($conn, "x40p5pp7n9rowyv6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com") or die("no db found");
 
     if(isset($_POST['submit'])){
       $email = $_POST['email'];

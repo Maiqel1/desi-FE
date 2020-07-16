@@ -1,11 +1,12 @@
 <?php
 
-$dbServername = "db4free.net";
-$dbUsername = "designerfe";
-$dbPassword = "12345678";
-$dbName = "stage7";
+$host = "x40p5pp7n9rowyv6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$dbUsername = "mvz4f0xixjq2ktpm";
+$dbPassword = "m6hnol7y0akpdcrc";
+$port = "3306"
+$dbName = "i3gf6kerqqkne16r";
 
-  $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+  $conn = mysqli_connect($host, $dbUsername, $dbPassword, $port, $dbName);
   //$conn = new_msqli("localhost", "id14345990_designerfe", "Mo0?i^Hc4uU&nWc@", "id14345990_stage7");
 
   /*mysqli_select_db($conn, "db name") or die("no db found");
