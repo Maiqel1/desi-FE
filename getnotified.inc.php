@@ -1,12 +1,12 @@
 <?php
     include_once 'dbh.inc.php';
 
-    mysqli_select_db($conn, "db name") or die("no db found");
+    mysqli_select_db($conn, "localhost") or die("no db found");
 
     if(isset($_POST['submit'])){
       $email = $_POST['email'];
 
-      $query = "INSERT INTO diggit (email) VALUES('$email')";h2
+      $query = "INSERT INTO diggit (email) VALUES('$email')";
       if(mysqli_query($conn, $query)){
         //echo "<h1>SUCCESS<h1>";
         header("location: success.html");

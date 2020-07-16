@@ -1,12 +1,12 @@
 <?php
 
-$host = "85.10.205.173:3306";
-$dbUsername = "designerfe";
-$dbPassword = "12345678";
-$dbName = "stage7";
+$dbServername = "localhost";
+$dbUsername = "id14345990_designerfe";
+$dbPassword = "Mo0?i^Hc4uU&nWc@";
+$dbName = "id14345990_stage7";
 
   //$conn = mysqli_connect($ho, $dbUsername, $dbPassword, $dbName);*/
-  $conn = new_msqli("85.10.205.173:3306", "designerfe", "12345678", "stage7");
+  $conn = new_msqli("localhost", "id14345990_designerfe", "Mo0?i^Hc4uU&nWc@", "id14345990_stage7");
 
   /*mysqli_select_db($conn, "db name") or die("no db found");
 
