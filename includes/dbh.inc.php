@@ -1,12 +1,12 @@
 <?php
 
-$host = "85.10.205.173:3306";
+$host = "db4free.net";
 $dbUsername = "designerfe";
 $dbPassword = "12345678";
 $dbName = "stage7";
 
-  //$conn = mysqli_connect($ho, $dbUsername, $dbPassword, $dbName);*/
-  $conn = new_msqli("85.10.205.173:3306", "designerfe", "12345678", "stage7");
+  $conn = mysqli_connect($host, $dbUsername, $dbPassword, $dbName);
+  $conn = new_msqli("db4free.net", "designerfe", "12345678", "stage7");
 
   /*mysqli_select_db($conn, "db name") or die("no db found");
 
