@@ -1,11 +1,11 @@
 <?php
     include_once 'dbh.inc.php';
 
-    $email = trim($_POST['email']);
+    /*$email = trim($_POST['email']);
 
     $email = stripslashes($email);
 
-    $email = htmlspecialchars($email);
+    $email = htmlspecialchars($email);*/
 
     /*$result = mysqli_num_rows(mysqli_query($conn, "SELECT 1 FROM diggit WHERE email = '$email';"));
 
