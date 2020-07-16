@@ -1,7 +1,22 @@
 <?php
     include_once 'dbh.inc.php';
 
-    mysqli_select_db($conn, "x40p5pp7n9rowyv6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com") or die("no db found");
+    $email = $_POST['email'];
+
+    $sql = "INSERT INTO diggit (email) VALUES('$email')";
+    mysqli_query($conn, $sql);
+
+    header("location: index.html");
+
+
+
+?>
+
+
+
+
+
+    <!--/*mysqli_select_db($conn, "x40p5pp7n9rowyv6.cbetxkdyhwsb.us-east-1.rds.amazonaws.com") or die("no db found");
 
     if(isset($_POST['submit'])){
       $email = $_POST['email'];
@@ -19,4 +34,3 @@
       // echo "<h1>FAILED<h1>";
       header("location: failed.html");
     }
-?>

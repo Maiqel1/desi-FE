@@ -1,5 +1,12 @@
   .header-back{
     background-color:#FFFCFC;
+    background-image:url(img/bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    left: 31px;
+    top: -38px;
 
   }
 
@@ -50,6 +57,19 @@ font-weight: normal;
 font-size: 18px;
 line-height: 36px;
 
+}
+
+
+.mega{
+  background-image: url(img/img7.png);
+    height: 150px;
+    width: 200px;
+    margin-top: -180px;
+    margin-left: -50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .button{
@@ -244,18 +264,32 @@ color: #FFFFFF;
 
   .section3 p{
     font-family: DM Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 38px;
-text-align: center;
-margin-left: -20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
+    margin-left: -40px;
+  }
 
+  .card1{
+    margin-left: 0px;
+  }
+
+  .card2{
+    margin-top: 20px;
+  }
+
+  .card3{
+    margin-top: 20px;
   }
 
   .screens{
     display: none;
   }
+
+
 
   .caro{
     margin-top: -100px;
@@ -266,9 +300,19 @@ margin-left: -20px;
     margin-top: 9px;
   }
 
+  .form-box{
+    margin-top: -100px;
+  }
+
   .foot-img{
       margin-left: 150px;
 
   }
+
+  .mega{
+display: none;
+  }
+
+
 
 }
