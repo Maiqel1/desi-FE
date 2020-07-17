@@ -14,7 +14,10 @@
     background-color: #E5E5E5;
     overflow: none;
   }
-
+.screens img:hover{
+  width: 500px;
+  height: 900px;
+}
 
 .lin{
   margin-left: 500px;
