@@ -8,7 +8,7 @@
         echo "Field is Required";
       }
       else{
-        $sql = "INSERT INTO `diggit` (`email`) VALUES('".$email"')" or die($conn->error);
+        $sql = "INSERT INTO `diggit` (`email`) VALUES('".$email."')" or die($conn->error);
         $conn->query($sql);
         
       }
