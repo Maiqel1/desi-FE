@@ -1,21 +1,34 @@
 <?php
-    include_once 'dbh.inc.php';
 
-    if(isset($_POST['submit'])){
-    $email = $_POST['email'];
+include 'dbh.inc.php';
 
-      if(empty($email)){
-        echo "Field is Required";
-      }
-      else{
-        $sql = "INSERT INTO `diggit` (`email`) VALUES('".$email."')" or die($conn->error);
-        $conn->query($sql);
-        
-      }
+$result = mysqli_num_rows(mysqli_query($conn, "SELECT 1 FROM diggit2 WHERE email = '$email';"));
 
+if (!filter_var($email, FILTER_VALIDATE_EMAIL))
+{
+    $signal = 'bad';
+    $message = 'Please enter a valid email';
+} elseif ($result > 0)
+{
+    $signal = 'bad';
+    $message = 'Email already exists';
+} else {
+    $sql = "INSERT INTO diggit2 (email) VALUES ('$email')";
 
-      header("location: success.html");
-
+    if (mysqli_query($conn, $sql)) {
+        $signal = 'ok';
+        $message = 'Email has been registered successfully!... go back to homepage';
+    } else {
+        $signal = 'bad';
+        $message = "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
 }
 
-?>
+mysqli_close($conn);
+
+$data = array(
+    'signal' => $signal,
+    'msg' => $message
+);
+
+echo json_encode($data);
