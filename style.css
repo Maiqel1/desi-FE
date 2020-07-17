@@ -382,5 +382,11 @@ display: none;
       width: 500px;
       height: 900px;
     }
+    
+  .logoimg{
+      margin-top: 10px;
+      height: 120px;
+      width: 120px;
+    }
 
 }
