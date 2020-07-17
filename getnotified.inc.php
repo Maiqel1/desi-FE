@@ -1,34 +1,41 @@
 <?php
 
-include 'dbh.inc.php';
+include './database.php';
 
-$result = mysqli_num_rows(mysqli_query($conn, "SELECT 1 FROM diggit2 WHERE email = '$email';"));
+$email = trim($_POST['email']);  // To trim white spaces
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL))
+$email = stripslashes($email);// to remove back slashes
+
+$email = htmlspecialchars($email); // to remove special characters
+
+$result = mysqli_num_rows(mysqli_query($conn, "SELECT 1 FROM email_lists WHERE email = '$email';"));
+
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) // Check if email is valid
 {
     $signal = 'bad';
     $message = 'Please enter a valid email';
-} elseif ($result > 0)
+} elseif ($result > 0) // Check if email exists already
 {
     $signal = 'bad';
     $message = 'Email already exists';
-} else {
-    $sql = "INSERT INTO diggit2 (email) VALUES ('$email')";
-
+} else { // All is good.. Lets save the email
+    $sql = "INSERT INTO email_lists (email) VALUES ('$email')";
+    
     if (mysqli_query($conn, $sql)) {
         $signal = 'ok';
-        $message = 'Email has been registered successfully!... go back to homepage';
+        $message = 'Email registered successfully';
     } else {
         $signal = 'bad';
         $message = "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 }
 
-mysqli_close($conn);
+mysqli_close($conn); // Close connection
 
 $data = array(
     'signal' => $signal,
     'msg' => $message
 );
 
+// Return data
 echo json_encode($data);
