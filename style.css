@@ -1,3 +1,11 @@
+  .body{
+    overflow:hidden;
+  }
+
+  button{
+    color: white;
+  }
+
   .header-back{
     background-color:#FFFCFC;
     background-image:url(img/bg.png);
@@ -12,12 +20,9 @@
 
   .body{
     background-color: #E5E5E5;
-    overflow: none;
+
   }
-.screens img:hover{
-  width: 500px;
-  height: 900px;
-}
+
 
 .lin{
   margin-left: 500px;
@@ -42,6 +47,11 @@
 
 .space{
   height: 209px;
+}
+
+.screens img:hover{
+  width: 500px;
+  height: 900px;
 }
 
 
@@ -159,6 +169,7 @@ margin-top: 50px;
 top: 51px;
 
 }
+
 .section2 h2{
   font-family: DM Sans;
 font-style: normal;
@@ -283,8 +294,8 @@ color: #FFFFFF;
   .jewel{
     display: none;
   }
-  
-  .section1{
+
+    .section1{
       margin-top: -40px;
     }
 
@@ -365,5 +376,11 @@ display: none;
   footer{
     margin-top: 30px;
   }
+
+  .ok:hover{
+
+      width: 500px;
+      height: 900px;
+    }
 
 }
