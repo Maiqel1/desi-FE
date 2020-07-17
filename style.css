@@ -131,7 +131,7 @@ border-radius: 10px;
 
 
 .back-elipse{
-background-color: #FFF9F7;
+background-image: url(img/img15.png);
 width: 120px;
 height: 120px;
 margin-left: 95px;
@@ -140,6 +140,25 @@ top: 51px;
 
 }
 
+.back-elipse1{
+background-image: url(img/img16.png);
+width: 120px;
+height: 120px;
+margin-left: 95px;
+margin-top: 50px;
+top: 51px;
+
+}
+
+.back-elipse2{
+background-image: url(img/img14.png);
+width: 120px;
+height: 120px;
+margin-left: 95px;
+margin-top: 50px;
+top: 51px;
+
+}
 .section2 h2{
   font-family: DM Sans;
 font-style: normal;
