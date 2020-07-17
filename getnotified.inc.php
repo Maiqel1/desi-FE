@@ -14,7 +14,7 @@
       }
 
 
-      header("location: success.html");
+      header("location: index.html");
 
 }
 
