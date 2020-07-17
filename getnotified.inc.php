@@ -1,13 +1,21 @@
 <?php
     include_once 'dbh.inc.php';
 
+    if(isset($_POST['submit'])){
     $email = $_POST['email'];
 
-    $sql = "INSERT INTO diggit (email) VALUES('$email')";
-    mysqli_query($conn, $sql);
+      if(empty($email)){
+        echo "Field is Required";
+      }
+      else{
+        $sql = "INSERT INTO `diggit` (`email`) VALUES('".$email"')" or die($conn->error);
+        $conn->query($sql);
+        
+      }
 
-    header("location: success.html");
 
+      header("location: success.html");
 
+}
 
 ?>
